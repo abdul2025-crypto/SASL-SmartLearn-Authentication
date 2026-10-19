@@ -1,0 +1,1 @@
+export default function ProgressBar({value,max=26}){return <div className="progress-track" role="progressbar" aria-valuenow={value} aria-valuemin="0" aria-valuemax={max}><div className="progress-fill" style={{width:`${Math.min(100,max?value/max*100:0)}%`}}/></div>}
